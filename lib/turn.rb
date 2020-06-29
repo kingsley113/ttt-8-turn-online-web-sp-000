@@ -14,7 +14,8 @@
 
 #code turn progam here
 def turn
-
+  
+end
 
 #generate and display the current board
 def display(board)
@@ -27,8 +28,6 @@ end
 
 # convert the input of the user (spots 1-9) to the index values for the board
 def move(array, index, value = "X")
-  puts "Where would you like to go? (1-9):"
-
   array[index] = value
 end
 
