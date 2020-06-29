@@ -8,7 +8,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 display_board(board)
 
 turn_num = 0
-while turn_num <=9
+while turn_num < 9
   turn_num += 1
   turn(board)
 end
