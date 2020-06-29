@@ -7,14 +7,15 @@ input = gets.strip.to_i
 # convert input to index
 index = input_to_index(input)
 # if index is valid
-if valid_move(board, index) == true
-  # make the move for index
-  move(board, input)
-  # show the board
-  display_board(board)
-else
-  # ask for input again until you get a valid input
-  puts "invalid move, please try again."
+  if valid_move(board, index) == true
+    # make the move for index
+    move(board, input)
+    # show the board
+    display_board(board)
+  else
+    # ask for input again until you get a valid input
+    puts "invalid move, please try again."
+  end
 end
 
 
