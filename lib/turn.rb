@@ -15,6 +15,7 @@ index = input_to_index(input)
   else
     # ask for input again until you get a valid input
     puts "Invalid move, please try again."
+    turn(board)
   end
 end
 
