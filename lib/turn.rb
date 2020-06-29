@@ -53,5 +53,5 @@ end
 
 #convert use input to index
 def input_to_index(input)
-  index = input -= 1
+  index = input - 1
 end
