@@ -1,21 +1,24 @@
 
-
+def turn
 # ask for input
+puts "Please enter 1-9:"
 # get input
+input = gets.strip.to_i
 # convert input to index
-
+index = input_to_index(input)
 # if index is valid
+if valid_move(board, index) == true
   # make the move for index
+  move(board, input)
   # show the board
-# else
+  display_board(board)
+else
   # ask for input again until you get a valid input
-# end
+  puts "invalid move, please try again."
+end
 
 
 #code turn progam here
-def turn
-
-end
 
 #generate and display the current board
 def display_board(board)
