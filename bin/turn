@@ -3,11 +3,12 @@ puts "Welcome to Tic Tac Toe!"
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-puts "Where would you like to go?"
-input = gets.strip.to_i
+turn
+#puts "Where would you like to go?"
+#input = gets.strip.to_i
 
-index = input_to_index(input)
+#index = input_to_index(input)
 
-move(board, index, "X")
+#move(board, index, "X")
 
-display_board(board)
+#display_board(board)
