@@ -26,10 +26,10 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 # convert the input of the user (spots 1-9) to the index values for the board
-def move(board, index)
+def move(array, index, value = "X")
   puts "Where would you like to go? (1-9):"
   
-  board[index] = "X"
+  array[index] = value
 end
 
 # determine if the entered move is a valid move
