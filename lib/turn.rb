@@ -14,7 +14,7 @@
 
 #code turn progam here
 def turn
-  
+
 end
 
 #generate and display the current board
