@@ -11,7 +11,7 @@
   # ask for input again until you get a valid input
 # end
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 #code turn progam here
 def turn
 
