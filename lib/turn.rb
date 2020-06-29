@@ -1,5 +1,5 @@
 
-def turn
+
 # ask for input
 # get input
 # convert input to index
@@ -11,19 +11,34 @@ def turn
   # ask for input again until you get a valid input
 # end
 
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+#code turn progam here
+def turn
+
 
 #generate and display the current board
 def display(board)
-
+puts " #{board[0]} | #{board[1]} | #{board[2]} "
+puts "-----------"
+puts " #{board[3]} | #{board[4]} | #{board[5]} "
+puts "-----------"
+puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 # convert the input of the user (spots 1-9) to the index values for the board
 def move(board, index)
+  puts "Where would you like to go? (1-9):"
+  
+  board[index] = "X"
+end
 
 # determine if the entered move is a valid move
 def valid_move?(board, index)
-  position_taken(board, index)
-
+  if index.between?(0, 8) && position_taken?(board, index) == false
+    true
+  else
+    false
+  end
 end
 
 #determine if the current position on the board is already taken
@@ -36,3 +51,7 @@ def position_taken?(board, index)
     false
   end
 end
+
+#convert use input to index
+def input_to_index(input)
+  index = input -= 1
