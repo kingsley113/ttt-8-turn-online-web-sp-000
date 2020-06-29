@@ -32,7 +32,7 @@ end
 
 # convert the input of the user (spots 1-9) to the index values for the board
 def move(array, index, value = "X")
-  array[index.to_i] = value
+  array[index] = value
 end
 
 # determine if the entered move is a valid move
