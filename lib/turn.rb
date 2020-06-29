@@ -1,5 +1,5 @@
 
-def turn
+def turn(board)
 # ask for input
 puts "Please enter 1-9:"
 # get input
