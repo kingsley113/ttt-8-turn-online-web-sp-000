@@ -6,8 +6,12 @@ puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 display_board(board)
-turn(board)
 
+turn_num = 0
+while turn_num <=9
+  turn_num += 1
+  turn(board)
+end
 
 
 
