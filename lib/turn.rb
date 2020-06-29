@@ -52,6 +52,6 @@ def position_taken?(board, index)
 end
 
 #convert use input to index
-def input_to_index(input)
-  index = input - 1
+def input_to_index(user_input)
+  index = user_input - 1
 end
