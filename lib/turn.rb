@@ -14,7 +14,7 @@ index = input_to_index(input)
     display_board(board)
   else
     # ask for input again until you get a valid input
-    puts "invalid move, please try again."
+    puts "Invalid move, please try again."
   end
 end
 
