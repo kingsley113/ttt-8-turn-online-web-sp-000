@@ -9,7 +9,7 @@ index = input_to_index(input)
 # if index is valid
   if valid_move?(board, index) == true
     # make the move for index
-    move(board, input, "X")
+    move(board, index, "X")
     # show the board
     display_board(board)
   else
