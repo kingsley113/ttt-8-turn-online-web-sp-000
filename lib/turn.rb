@@ -7,7 +7,7 @@ input = gets.strip.to_i
 # convert input to index
 index = input_to_index(input)
 # if index is valid
-  if valid_move(board, index) == true
+  if valid_move?(board, index) == true
     # make the move for index
     move(board, input)
     # show the board
